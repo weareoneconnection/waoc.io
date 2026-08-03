@@ -148,10 +148,12 @@ export default function V10Experience({ locale }: { locale: Locale }) {
         <div className="shell footerLayout">
           <div className="footerStatement"><span className="brandNode large"><i /></span><h2>{t.footer}</h2></div>
           <div className="footerLinks">
+            <a href="https://www.waoc.network/" target="_blank" rel="noreferrer">Network ↗</a>
             <a href="https://www.weareoneconnection.org" target="_blank" rel="noreferrer">Manifesto ↗</a>
             <a href="https://www.oneai.network" target="_blank" rel="noreferrer">OneAI Labs ↗</a>
             <a href="https://github.com/weareoneconnection" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="https://x.com/WAOCConnectOne" target="_blank" rel="noreferrer">X ↗</a>
+            <a href="https://x.com/waoconnectone" target="_blank" rel="noreferrer">X ↗</a>
+            <a href="https://t.me/WAOCGlobalCommunity" target="_blank" rel="noreferrer">Telegram ↗</a>
           </div>
           <div className="footerLegal"><span>WAOC / V10</span><span>CONNECTED INTELLIGENCE INTERFACE</span></div>
         </div>
