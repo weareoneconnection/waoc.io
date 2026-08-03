@@ -30,6 +30,20 @@ export type Copy = {
   trust: string[];
   horizon: string[];
   footer: string;
+  network: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    back: string;
+    live: string;
+    stale: string;
+    loading: string;
+    empty: string;
+    stats: { contributors: string; builders: string; links: string; signals: string };
+    board: { kicker: string; title: string; body: string; open: string; points: string; missions: string };
+    field: { kicker: string; title: string; body: string; open: string; caption: string };
+    enter: { title: string; body: string; mission: string; field: string };
+  };
 };
 
 export const copy: Record<Locale, Copy> = {
@@ -114,7 +128,39 @@ export const copy: Record<Locale, Copy> = {
     ],
     trust: ["Contribution", "Evidence", "Verification", "Memory", "Reputation", "Access"],
     horizon: ["Human collaboration", "Human + AI coordination", "Agent networks", "Intelligent organizations", "Human-agent-robot missions", "Connected intelligence"],
-    footer: "The future is not built by isolated intelligence. It is built by connection."
+    footer: "The future is not built by isolated intelligence. It is built by connection.",
+    network: {
+      eyebrow: "WAOC / LIVE NETWORK",
+      title: "The network, as it stands right now.",
+      body: "Not a diagram. These are the contributors, missions and relationships currently recorded across One Mission and OneField.",
+      back: "Back to the story",
+      live: "LIVE",
+      stale: "UPSTREAM UNAVAILABLE",
+      loading: "Reading the network…",
+      empty: "No data recorded yet.",
+      stats: { contributors: "Contributors", builders: "Builders", links: "Links", signals: "Signals" },
+      board: {
+        kicker: "ONE MISSION / CONTRIBUTION",
+        title: "Participation becomes reputation.",
+        body: "Every completed mission is recorded against a wallet, so contribution accumulates into something inspectable rather than disappearing.",
+        open: "Open One Mission",
+        points: "pts",
+        missions: "missions"
+      },
+      field: {
+        kicker: "ONEFIELD / TOPOLOGY",
+        title: "Relationships the network has actually formed.",
+        body: "OneField turns conversation and contribution into structured memory. The constellation below shows the most connected builders and the strongest links between them.",
+        open: "Open OneField",
+        caption: "Top builders by score, trust and connection density"
+      },
+      enter: {
+        title: "Enter through the layer you need.",
+        body: "One Mission is where contribution is recorded. OneField is where the network remembers.",
+        mission: "One Mission",
+        field: "OneField"
+      }
+    }
   },
   zh: {
     nav: ["现状", "协议", "网络", "生态", "参与", "未来"],
@@ -197,6 +243,38 @@ export const copy: Record<Locale, Copy> = {
     ],
     trust: ["贡献", "证据", "验证", "记忆", "声誉", "访问"],
     horizon: ["人类协作", "人机协同", "Agent 网络", "智能组织", "人类—Agent—机器人使命", "连接智能"],
-    footer: "未来不是由孤立智能构建，而是由连接构建。"
+    footer: "未来不是由孤立智能构建，而是由连接构建。",
+    network: {
+      eyebrow: "WAOC / 实时网络",
+      title: "此刻的网络，真实的样子。",
+      body: "这不是示意图。以下是 One Mission 与 OneField 中当前记录在案的贡献者、任务与关系。",
+      back: "回到叙事",
+      live: "实时",
+      stale: "上游数据不可用",
+      loading: "正在读取网络…",
+      empty: "暂无记录数据。",
+      stats: { contributors: "贡献者", builders: "建设者", links: "关系", signals: "信号" },
+      board: {
+        kicker: "ONE MISSION / 贡献",
+        title: "参与正在沉淀为声誉。",
+        body: "每一个完成的任务都记录在钱包地址之下，让贡献累积成可被检验的东西，而不是消失在过程里。",
+        open: "打开 One Mission",
+        points: "积分",
+        missions: "任务"
+      },
+      field: {
+        kicker: "ONEFIELD / 拓扑",
+        title: "网络真实形成的关系。",
+        body: "OneField 把对话与贡献转化为结构化记忆。下面的星图显示连接密度最高的建设者，以及他们之间最强的关系。",
+        open: "打开 OneField",
+        caption: "按积分、信任度与连接密度排序的头部建设者"
+      },
+      enter: {
+        title: "从你需要的那一层进入。",
+        body: "One Mission 记录贡献，OneField 让网络记住。",
+        mission: "One Mission",
+        field: "OneField"
+      }
+    }
   }
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { Locale } from "@/content/site";
 import { copy } from "@/content/site";
 import { useScrollDirector } from "@/lib/useScrollDirector";
@@ -38,7 +39,7 @@ export default function V10Experience({ locale }: { locale: Locale }) {
           </h1>
           <p className="heroBody">{t.hero.body}</p>
           <div className="heroActions">
-            <a href="https://www.waoc.network/" target="_blank" rel="noreferrer" className="actionPrimary"><span>{t.hero.enter}</span><i>↗</i></a>
+            <Link href={isZh ? "/zh/network" : "/network"} className="actionPrimary"><span>{t.hero.enter}</span><i>→</i></Link>
             <a href="https://www.weareoneconnection.org" target="_blank" rel="noreferrer" className="actionText"><span>{t.hero.manifesto}</span><i>↗</i></a>
           </div>
         </div>
@@ -148,7 +149,8 @@ export default function V10Experience({ locale }: { locale: Locale }) {
         <div className="shell footerLayout">
           <div className="footerStatement"><span className="brandNode large"><i /></span><h2>{t.footer}</h2></div>
           <div className="footerLinks">
-            <a href="https://www.waoc.network/" target="_blank" rel="noreferrer">Network ↗</a>
+            <Link href={isZh ? "/zh/network" : "/network"}>Live Network →</Link>
+            <a href="https://www.waoc.network/" target="_blank" rel="noreferrer">OneField ↗</a>
             <a href="https://www.weareoneconnection.org" target="_blank" rel="noreferrer">Manifesto ↗</a>
             <a href="https://www.oneai.network" target="_blank" rel="noreferrer">OneAI Labs ↗</a>
             <a href="https://github.com/weareoneconnection" target="_blank" rel="noreferrer">GitHub ↗</a>
