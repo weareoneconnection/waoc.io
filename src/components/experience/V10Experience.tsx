@@ -38,7 +38,7 @@ export default function V10Experience({ locale }: { locale: Locale }) {
           </h1>
           <p className="heroBody">{t.hero.body}</p>
           <div className="heroActions">
-            <a href="#act-1" className="actionPrimary"><span>{t.hero.enter}</span><i>↘</i></a>
+            <a href="https://www.waoc.network/" target="_blank" rel="noreferrer" className="actionPrimary"><span>{t.hero.enter}</span><i>↗</i></a>
             <a href="https://www.weareoneconnection.org" target="_blank" rel="noreferrer" className="actionText"><span>{t.hero.manifesto}</span><i>↗</i></a>
           </div>
         </div>
